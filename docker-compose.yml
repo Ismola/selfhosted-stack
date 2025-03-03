@@ -11,6 +11,8 @@ services:
   chess-game-client:
     image: ghcr.io/ismola/fork-marve10s-ultimateastrotemplate:main
     restart: unless-stopped
+    ports:
+      - "4321:4321"
     depends_on:
       - nginx
   nginx:
